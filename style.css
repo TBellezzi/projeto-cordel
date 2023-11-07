@@ -52,7 +52,7 @@ header a:hover, footer a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh; /*para me ajudar a fazer uma rolagem na tela*/
-    line-height: 2em;
+    line-height: 1em;
     padding-left: 30px ;
     font-family: var(--fonte3);
     font-size: 3.5vw;/*baseando no tamanho da tela*/
@@ -62,7 +62,13 @@ section > p {
     padding-bottom: 2em;
 }
 
+section.normal{
+    background-color: white;
+    color: black;
+}
+
 section.imagem{
+    background-color: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 
     rgba(0, 0, 0, 0.425); /*inset = sombra pra 
@@ -75,14 +81,10 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.432);
     width: 400px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.482);
-    
+    display: inline-block;
     padding: 5px;
 }
 
-section.normal{
-    background-color: white;
-    color: black;
-}
 
 section#img01{
     background-image: url(imagens/background001.jpg);
